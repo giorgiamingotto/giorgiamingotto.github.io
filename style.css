@@ -11,3 +11,5 @@ p{color: white}
 .evi{
 	color: #f4cccc
 }
+
+#menu-principale li{ display: inline; text align: right}
