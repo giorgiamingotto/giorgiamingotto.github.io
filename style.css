@@ -1,5 +1,6 @@
 body{
-	background: black
+	background: black;
+    font-family: "Verdana", sans-serif;
 }
 h1,
 h2,
@@ -11,5 +12,6 @@ p{color: white}
 .evi{
 	color: #f4cccc
 }
-
-#menu-principale li{ display: inline; text align: right}
+#menu-principale{ text-align: right}
+#menu-principale li{ display: inline}
+#menu-principale li a{ margin: 10px}
