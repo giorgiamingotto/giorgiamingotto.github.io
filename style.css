@@ -5,13 +5,27 @@ body{
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 a,
 ul,
 p{color: white}
+h1{height: 50px;width: 50px}
+h4{height: 50px}
+h5{height: px}
 
-.evi{
+.evi-big{
 	color: #f4cccc
+}
+.evi-small{
+	color: #f4cccc;
+	font-size: 10px
+    
 }
 #menu-principale{ text-align: right}
 #menu-principale li{ display: inline}
 #menu-principale li a{ margin: 10px}
+#menu-itcaad{ text-align: right}
+#menu-itcaad li{ display: inline}
+#menu-itcaad li a{ margin: 10px}
