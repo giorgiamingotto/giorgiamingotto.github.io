@@ -13,12 +13,42 @@ ul,
 p{color: white}
 h1{height: 50px;width: 50px}
 h4{height: 20px}
-
 p{font-size: 15px}
 
 
+
+
+
+
+.sezione{
+	display: flex;
+	align-items: flex-start;
+}
+
+.titolo{
+	width: 30%;
+	margin: 0;
+	padding-right: 20px;
+	font-weight: bold;
+	text-align: left;
+}
+
+.testo{
+	width: 70%;
+	text-align: justify;
+	padding-right: 20px;
+}
+
+
+
+
+
+
+
+
+
 .container{
-	text-align: center
+	text-align: right;
 }
 
 .spazio{
