@@ -1,3 +1,7 @@
+html{
+	scroll-behavior: smooth;
+}
+
 body{
 	background: black;
     font-family: "Verdana", sans-serif;
@@ -15,6 +19,18 @@ h1{height: 50px;width: 50px}
 h4{height: 20px}
 p{font-size: 15px}
 
+hr{
+	border: none;
+	height: 1px;
+	border-top: 1px solid #ffffff;
+}
+
+.logo{
+	display: inline-block;
+	width: 300px;
+	letter-spacing: 4.6px;
+	text-align: center
+}
 
 
 
@@ -44,7 +60,9 @@ p{font-size: 15px}
 
 
 
-
+a{
+	text-decoration: none;
+}
 
 
 .container{
@@ -84,9 +102,21 @@ font-size: 10px}
 #menu-principale{ text-align: right}
 #menu-principale li{ display: inline}
 #menu-principale li a{ margin: 10px}
-#menu-itcaad{ text-align: right}
+#menu-principale a:hover{
+	color: #f4cccc
+}
+#menu-principale{
+	font-weight:bold
+}
+
+#menu-itcaad{
+	text-align: right;
+	font-weight: bold
+}
 #menu-itcaad li{ display: inline}
 #menu-itcaad li a{ margin: 10px}
-
+#menu-itcaad a:hover{
+	color: #f4cccc
+}
 footer{
 text-align: center}
