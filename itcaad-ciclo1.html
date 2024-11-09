@@ -28,9 +28,38 @@
 			    <img src="logo.png" width="300" height="150">
 			</div>
 			<div class="logo">
-			     <h2>giorgia mingotto</h2>
+			     <a href="scrollToTopBtn"><h2>giorgia mingotto</h2>
 		    </div>
-			<h2>IN AGGIORNAMENTO</h2>
+			
+			
+<a id="#scrollToTopBtn"></a>
+
+    <!-- Contenuto della pagina -->
+    <div style="height:10px;">↑</div>
+
+    <!-- Pulsante "Torna su" -->
+    <button onclick="scrollToTop()" id="scrollToTopBtn">↑</button>
+
+    <!-- JavaScript per gestire il pulsante -->
+    <script>
+        // Mostra il pulsante quando si scorre 100px verso il basso
+        window.onscroll = function() {
+            var button = document.getElementById("scrollToTopBtn");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                button.classList.add("show");
+            } else {
+                button.classList.remove("show");
+            }
+        };
+
+        // Funzione per scorrere fino all'inizio della pagina
+        function scrollToTop() {
+		    document.documentElement.scrollTop = 0;
+			document.body.scrollTop = 0;
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>			
+	
 			<hr>
 			
 			<h3>ITCAAD</h3>
@@ -75,9 +104,18 @@
 			<h5>
 			   <a href="#06.10">Sfide, opportunità e insidie dell'IA: verso il Digital Twin, di Alfio Quarteroni</a>
 			</h5>
+			<h5>
+			   <a href="#08.10">L4 bis: Parte B. Lo strumento</a>
+			<h5>
+			   <a href="#09.10">L5: La lunga crisi dell'Ottocento. Ricerche e innovazioni tra architettura ingegneria e arte</a>
+			</h5>
+			<h5>
+			   <a href="#15.10">L6: La Trasparenza: il catalizzatore dell'architettura della rivoluzione industriale. Il Bauhaus a Dessau
+			</h5>
             <h5>
 			   <a href="#22.10">Nuove Sostanze. L'informatica e il rinnovamento dell'architettura, di Antonino Saggio</a>
 			</h5>
+			
 	    </ul>
 			
 			<div class="spazio"></div>
@@ -85,6 +123,209 @@
 			
 	<hr>		
 			<div class="spazio"></div>
+			
+			
+			
+			
+			
+			
+			
+<div class="sezione">
+    <div class="titolo">
+    <section id="15.10">
+	</section>
+	        <h6 id="date">15.10.2024</h6>
+			<h4>L6: La Trasparenza: il catalizzatore dell'architettura della rivoluzione industriale
+			<br />Il Bauhaus di Dessau</h4>
+	</div>
+	
+	<div class="testo">
+	        <h5>Da Weimar a Dessau: La nascita di un’Università Anticonformista</h5>
+			<p>
+			   Il Bauhaus ha le sue radici a Weimar, dove venne concepito come una scuola che incarnava il dinamismo di una cittadella universitaria. Si percepiva quasi come un'Oxford europea per lo spirito libero che la animava: giovani da tutto il continente affluivano qui, portando idee anticonformiste e una visione libertaria che contrastava con il clima culturale e politico della città. Ma fu con l’arrivo di 
+			   <a class="evi-big" href="https://it.wikipedia.org/wiki/Walter_Gropius">Walter Gropius</a> 
+			   che la scuola cambiò volto: sotto la sua direzione, il Bauhaus si trasferì a Dessau, segnando un passaggio fondamentale verso una nuova idea di università, forgiata dalle crisi dell'epoca.
+			   <br />Con il trasferimento del Bauhaus a Dessau, il movimento entra in una nuova fase, concretizzando un'architettura rivoluzionaria capace di rispondere ai bisogni di una società in piena <b>crisi industriale</b>. L’obiettivo di questa nuova architettura è andare oltre i modelli tradizionali, trovando risposte innovative alla crescente urbanizzazione, alla richiesta di spazi produttivi e a una vita collettiva integrata.
+			</p>
+			<p>
+			   L'edificio del Bauhaus a Dessau non è solo una scuola; è una risposta visiva e funzionale alla crisi del tempo.
+			   <br />La sua struttura si distanzia nettamente dalle forme convenzionali: l'architettura è progettata come un’elica, simbolo di dinamismo e innovazione. Ogni parte dell’edificio ha un' <b>organizzazione funzionale e tipologica</b> che ne definisce chiaramente la destinazione: dalle residenze per studenti, ai laboratori, fino agli uffici amministrativi e lo studio di Gropius.
+			   <br />Questo approccio <b>a-tipologico</b> riflette la filosofia stessa del Bauhaus, che vuole essere non solo un luogo di studio, ma un vero laboratorio di idee e di convivenza sociale.
+			</p>
+			<p>
+			   Una delle caratteristiche più innovative dell’edificio è l’introduzione della <b>finestra ad angolo</b>: attraverso l’ampio utilizzo di superfici vetrate, l’architettura accoglie luce naturale e trasparenza, rompendo con le logiche prospettiche tradizionali e aprendo nuovi scenari visivi.
+			   <br />Questa apertura alla luce rappresenta anche un’apertura ideologica: un luogo in cui le idee e le persone si incontrano senza barriere, e in cui la <b>trasparenza</b> è alla base della progettazione.
+			   <br />Tra gli spazi degni di nota, vi è il grande <b>aula polifunzionale</b> che funge da collante tra gli alloggi degli studenti e i laboratori. Questa sala, ampia e flessibile, riflette l’idea di un’architettura in grado di adattarsi alle necessità della comunità, di un luogo in cui le funzioni cambiano in base alle esigenze di chi lo vive.
+			   <br />In sintesi, il Bauhaus a Dessau non è solo un edificio, ma un manifesto vivente di una nuova concezione di architettura e urbanistica. In questo percorso, il nostro obiettivo è fare luce su ogni aspetto, completando insieme la nostra tabella di studio per comprendere appieno l'eredità di questa scuola rivoluzionaria.
+			</p>
+			<div class="container">
+			    <img src="chartinv.png" width="900" height="241">
+			    <p class="didascalia">Giorgia Mingotto,<i>Chart dei temi dei 3 paradigmi nell'architettura</i></p>
+			 </div>
+	
+	</div>
+</div>
+
+    <hr>
+			
+<div class="sezione">
+
+    <div class="titolo">
+    <section id="09.10">
+    </section>
+	        <h6 id="date">09.10.2024</h6>
+			<h4>L5: La lunga crisi dell'Ottocento. Ricerche e innovazioni tra architettura ingegneria e arte</h4>
+    </div>
+
+    <div class="testo">
+	        <h5>Perché ci è voluto così tanto per affermare un nuovo paradigma nell’architettura?</h5>
+			<p>
+			   Il percorso dell’architettura è lungo, complesso e attraversato da cambiamenti radicali. Ogni nuovo paradigma architettonico emerge lentamente, e spesso in modo travagliato, perché sviluppare una nuova visione richiede il tempo necessario per interpretare e integrare esperienze precedenti. Noi stessi siamo ancora in mezzo a questo "ciclone" di transizione, ed è importante guardare al passato per orientarsi e allenare la nostra capacità di comprensione.
+			</p>
+			<h5>1. Centovent’anni per il nuovo paradigma: lo studio del passato</h5>
+			<p>
+			   Per capire come siamo giunti all’architettura contemporanea, uno sguardo al passato ci fornisce risposte importanti.
+			   <br />Secondo il libro 
+			   <a class="evi-big" href="https://www.amazon.it/Architettura-modernit%C3%A0-Bauhaus-rivoluzione-informatica/dp/8843051644"><i>Architettura e modernità. Dal Bauhaus alla rivoluzione informatica</i></a>
+			   di A. Saggio, la nascita degli <i>“architetti rivoluzionari”</i> si può collocare già attorno alla Rivoluzione Industriale francese, con figure come 
+			   <a class="evi-big" href="https://it.wikipedia.org/wiki/%C3%89tienne-Louis_Boull%C3%A9e">Étienne-Louis Boullée</a>
+			   e 
+			   <a class="evi-big" href="https://it.wikipedia.org/wiki/Claude-Nicolas_Ledoux">Claude-Nicolas Ledoux</a>.
+			   <br />I loro progetti miravano a un’architettura di potenza geometrica, simboleggiante la razionalità scientifica e rispondendo ai principi dell’Illuminismo. In un periodo dominato da stili come il Barocco e il Rococò, i lavori di Boullée e Ledoux rappresentavano una rottura netta.
+			   <br />La cultura accademica venne poi rinnovata da Napoleone, che con la fondazione del Politecnico promosse un approccio più tecnico e tipologico. Questa evoluzione richiedeva un processo di <i>razionalizzazione</i> dell’architettura, un lavoro portato avanti anche dalla Scuola di 
+			   <a class="evi-big" href="https://it.wikipedia.org/wiki/Jean-Nicolas-Louis_Durand"</a>Durand.
+			   <br />Tuttavia, l’influenza di Boullée e Ledoux rimase latente, quasi “dormiente”, fino a tempi più recenti.
+			</p>
+			<h5>2. L’avvento del ferro: l’industrializzazione e l’architettura</h5>
+			<p>
+			   Con la rivoluzione industriale arrivano innovazioni sostanziali: il <b>ferro</b> viene introdotto come materiale da costruzione, essenziale per ponti, hangar e ferrovie. Questo materiale era apprezzato per la sua resistenza strutturale e la rapidità costruttiva, ma il suo utilizzo richiedeva anche nuove tecniche.
+			   <br />La rivoluzione industriale prosegue con altre innovazioni come il <b>cemento armato</b>, sviluppato da due giardinieri.
+			   <br />Un esempio straordinario dell’epoca fu il Crystal Palace, costruito a Londra per l’Esposizione Universale: un’architettura audace, leggera e flessibile, che cambiò la concezione dei materiali.
+			</p>
+			<p>
+			   La Grande Crisi del 1870, con il devastante incendio di Chicago, spinse ulteriormente a trovare nuove soluzioni architettoniche e costruttive. Fu così che nacque il <b>sistema a telaio</b> (o <i>“frame structure”</i>), che portò allo sviluppo dei grattacieli, con la possibilità di raggiungere altezze impressionanti grazie all’uso del ferro e del vetro.
+			</p>
+			<h5>3. L’architettura organica e il movimento Arts and Crafts</h5>
+			<p>
+			   Durante questo periodo emergono architetti come 
+			   <a class="evi-big" href="https://it.wikipedia.org/wiki/Louis_Sullivan">Louis Sullivan</a>
+			   , noti per il tentativo di rendere l’architettura <i>organica</i> rispetto alla costruzione.
+			   <br />Spostandoci in Inghilterra, assistiamo al revival medievale promosso dai <i>Preraffaelliti</i>, che rifiutavano l’industrializzazione, sostenendo un ritorno all’artigianato e all’estetica naturale. Tra questi artisti, 
+			   <a class="evi-big" href="https://it.wikipedia.org/wiki/William_Morris">William Morris</a> e 
+			   <a class="evi-big" href="https://it.wikipedia.org/wiki/Philip_Webb">Philip Webb</a> 
+			   contribuirono alla nascita del movimento <i>Arts and Crafts</i>, un’idea di “unico mondo” che unisse tessuti, grafica e architettura.
+			</p>
+			<p>
+			   L’eclettismo della fine dell’Ottocento porta con sé una fusione di stili e superfici diversificate, con la crescente esigenza di integrare più estetiche.
+			   <br />In questo contesto, l’<i>Art Nouveau</i> (o <i>stile Liberty</i>) rappresenta un altro passo avanti: un linguaggio unico caratterizzato dall’uso di vetro, ferro e ghisa, con decorazioni ispirate alla natura.
+			</p>
+			<h5>4. La stazione e il nuovo paesaggio metropolitano</h5>
+			<p>
+			   In questo periodo, la stazione diventa un’icona architettonica contraddittoria, simbolo del conflitto tra architettura e ingegneria. La stazione simboleggia il dinamismo e il movimento della città moderna, un tema che ritroviamo anche nell’arte impressionista: pittori come 
+			   <a class="evi-big" href="https://it.wikipedia.org/wiki/Claude_Monet">Monet</a> 
+			   immortalano stazioni come luoghi di passaggio, rendendo visibile il paesaggio urbano e la vita frenetica che caratterizza il tempo moderno.
+			   <br />L’arte si frammenta, cercando di cogliere la fugacità del momento, come in una fotografia.
+		    </p>
+			<h5>5. Il passaggio all’astrazione: Paul Cézanne e Picasso</h5>
+			<p>
+			   La transizione verso la modernità si fa sentire anche nell’arte: 
+			   <a class="evi-big" href="https://it.wikipedia.org/wiki/Paul_C%C3%A9zanne">Paul Cézanne</a> 
+			   affronta una serie di contraddizioni stilistiche, esplorando volumi e colori in modo autonomo rispetto all’impressionismo.
+			   <br />Le sue opere, come <i>Montagne Sainte-Victoire</i> e le sue nature morte, portano verso una frammentazione e una logica analitica che sfociano nell’astrazione.
+			</p>
+			<p>
+			   È qui che la modernità si afferma, culminando con 
+			   <a class="evi-big" href="https://it.wikipedia.org/wiki/Pablo_Picasso"> Pablo Picasso</a> 
+			   e le <i>Demoiselles d’Avignon</i>, una composizione scomposta e dinamica che segna l’inizio del cubismo. Questo nuovo linguaggio sfida i concetti estetici tradizionali, offrendo una visione del mondo innovativa e senza paura della “bruttezza” come nuova prospettiva estetica.
+			</p>
+			<p>
+			   <b>E in architettura?</b>
+			</p>
+			   
+	</div>
+	
+</div>
+
+    <hr>
+
+
+<div class="sezione">
+
+    <div class="titolo">
+    <section id="08.10">
+	</section>
+	        <h6 id="date">08.10.2024</h6>
+			<h4>L4 bis: Strumenti cognitivi e strumenti operativi: sfida per ridefinire i confini dell'architettura</h4>
+			<div class="spazio"></div>
+			<h5>Parte B: Lo strumento</h5>
+    </div>
+	
+	<div class="testo">
+	        <h5>Utensile o Strumento? La Differenza secondo Alexandre Koyré e il Ruolo della Tecnologia nella Cultura</h5>
+			<p>
+			   C’è una differenza tra <b><i>utensile</i></b> e <b><i>strumento</i></b>? Sì, e non è di poco conto.
+			<br />Per 
+			<a class="evi-big" href="https://it.wikipedia.org/wiki/Alexandre_Koyr%C3%A9">Alexandre Koyré</a>
+			, un filosofo e storico della scienza, questa distinzione è cruciale.
+			<br />Secondo lui, l’<b><i>utensile</i></b> (<i>outil</i>) è un oggetto che estende le capacità fisiche del corpo umano: un martello, una pala, una corda, strumenti che amplificano la nostra forza e agilità.
+			<br />Lo <b><i>strumento</i></b> (<i>instrument</i>), invece, ha un significato più profondo, legato alla sfera dello spirito. In particolare, Koyré si riferisce agli strumenti musicali, che non solo amplificano una capacità fisica ma concretizzano e materializzano un’espressione interiore, lo spirito creativo umano.
+			</p>
+			<p>
+			   Per comprendere meglio questa distinzione, possiamo fare un salto nella storia e guardare all’impatto di alcuni strumenti che hanno cambiato il modo in cui percepiamo e rappresentiamo il mondo. 
+			<br />Pensiamo, per esempio, alla macchina fotografica, introdotta da 
+			<a class="evi-big" href="https://it.wikipedia.org/wiki/Nadar">Nadar</a>
+			, che ha portato un realismo visivo senza precedenti, simile alla pittura per certi versi, ma con un linguaggio proprio. Successivamente, Edward Muybridge utilizza la fotografia per studiare scientificamente il movimento, dimostrando che questo nuovo strumento non serviva solo alla pura espressione artistica ma diventava anche un mezzo di indagine scientifica.
+			<br />Ogni nuovo strumento solitamente genera due reazioni opposte:
+			<ul>
+			    <li>da un lato, ci sono coloro che lo utilizzano all'interno delle categorie preesistenti, senza vederlo come un cambiamento radicale;</li>
+				<li>dall'altro, ci sono i pionieri, che esplorano le potenzialità innovative del mezzo, mettendo in crisi i paradigmi esistenti.</li>
+	        </ul>
+			</p>
+			<p>
+			La fotografia, infatti, non si è limitata a supportare la pittura, ma ha spinto i pittori stessi a reinventare il loro linguaggio. Questo ha portato alla nascita della pittura impressionista, che esplora l’effetto della luce e del colore al di là del realismo.
+			<br />Allo stesso modo, l’introduzione del cinema ha messo in discussione le arti visive tradizionali, anche se in modo meno sconvolgente rispetto alla fotografia.
+			</p>
+			<p>
+			   Oggi viviamo in un’epoca in cui l’information technology sta trasformando radicalmente il nostro rapporto con il mondo.
+			<br />A differenza degli utensili che amplificano le nostre capacità fisiche, la tecnologia digitale agisce come uno strumento che richiede una comprensione nuova e sperimentale delle sue potenzialità. Non è solo un mezzo per facilitare compiti esistenti, ma è una piattaforma per l'innovazione.
+			<br />Considerare l’information technology come un semplice utensile significherebbe limitare la sua portata, mentre comprenderla come strumento ci invita a esplorare come può ridefinire il nostro modo di vivere, comunicare e creare. Ciò implica un approccio sperimentale, capace di cogliere e sfruttare appieno le caratteristiche uniche del digitale, creando nuove categorie e modi di pensare.
+			</p>
+			<h5>La Corda: Uno Strumento di Geometria e Costruzione</h5>
+			<p>
+			   La storia offre molti esempi di strumenti che hanno rivoluzionato il pensiero e l'architettura.
+			<br />Prendiamo, ad esempio, la corda, un oggetto semplice che però, nella geometria antica, era uno strumento potente. Con la corda, si potevano costruire forme geometriche precise e perfette, come il pentagono o l’esagono, e persino elaborare la sezione aurea. Ogni passaggio, da un punto di partenza fino alla costruzione di figure complesse, riflette l’abilità di trasformare un concetto matematico in una realtà tangibile.
+			Ecco, la spiegazione del processo di costruzione della <i>"Corda Pentagonica"</i>, descritta da 
+			<a class="evi-big" hre="https://it.wikipedia.org/wiki/Girolamo_Pico_Fonticulano">Girolamo Pico Fonticulano</a> nella sua opera 
+			<a class="evi-big" href="https://preserver.beic.it/delivery/DeliveryManagerServlet?dps_pid=IE6648293"><i><b>Geometria</b></i></a>
+			pubblicata nel 1597.
+			</p>
+			<div class="container">
+			    <img src="4p.151.jpg" width="450" height="682">
+			    <img src="cordab.png" width="457" height="682">
+			    <p class="didascalia">Giorgia Mingotto,<i> La Corda: Uno strumento di Geometria e Costruzione</i></p>
+			 </div>
+			
+		    <p>
+		       La sezione aurea, in particolare, ha un rapporto profondo con l’architettura. Questo rapporto non è casuale: l’architettura, attraverso lo strumento, rende concreti i concetti matematici e geometrici.
+			   <br />Le piramidi egizie, per esempio, incarnano una conoscenza geometrica precisa, mentre la struttura della città romana dimostra una comprensione avanzata delle proiezioni perpendicolari e delle proporzioni.
+			   <br />Qui, il ruolo dello strumento è centrale: è la chiave per tradurre le idee in costruzioni reali, espressioni tangibili della conoscenza.
+			</p>
+			<p>
+			   Nel Rinascimento, con l’avvento della prospettiva, si sviluppano nuovi strumenti di rappresentazione, portando a una visione del mondo scientifica e precisa.
+			   <br />Più tardi, nel Barocco, gli architetti come Borromini iniziano a utilizzare forme più complesse e curve, esplorando possibilità che vanno oltre la semplice rappresentazione prospettica e si avvalgono di strumenti più sofisticati, come il compasso, per tracciare linee sinuose e forme dinamiche.
+		    </p>
+			<p>
+			   Questi esempi ci dimostrano come gli strumenti non siano mai solo mezzi per ampliare le capacità fisiche, ma anche dispositivi che ci spingono a esplorare nuovi modi di pensare e costruire.
+			   <br />La tecnologia digitale, come i grandi strumenti del passato, può ridefinire il nostro rapporto con il mondo. <i>Sta a noi coglierne le potenzialità e immaginare come, attraverso di essa, possiamo costruire il futuro.</i>
+			</p>
+
+
+	</div>
+
+</div>
+
+    <hr>
+
 
 
 <div class="sezione">
