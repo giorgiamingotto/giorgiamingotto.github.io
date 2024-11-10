@@ -16,8 +16,8 @@
 			<ul id="menu-itcaad">
 				<li><a href="itcaad-ciclo1.html">ciclo I</a>
 				<li><a href="itcaad-ciclo2.html">ciclo II</a>
-				<li><a href="midterm-exam.html">midterm exam</a>
 				<li><a href="itcaad-ciclo3.html">ciclo III</a>
+				<li><a href="midterm-exam.html">midterm exam</a>
 				<li><a href="itcaad-ciclo4.html">ciclo IV</a>
 				<li><a href="itcaad-ciclo5.html">ciclo V</a>
 				<li><a href="itcaad-ciclo6.html">ciclo VI</a>
@@ -27,8 +27,38 @@
 			    <img src="logo.png" width="300" height="150">
 			</div>
 			<div class="logo">
-			     <h2>giorgia mingotto</h2>
+			     <a href="scrollToTopBtn"><h2>giorgia mingotto</h2>
 		    </div>
+			
+<a id="#scrollToTopBtn"></a>
+
+    <!-- Contenuto della pagina -->
+    <div style="height:10px;">↑</div>
+
+    <!-- Pulsante "Torna su" -->
+    <button onclick="scrollToTop()" id="scrollToTopBtn">↑</button>
+
+    <!-- JavaScript per gestire il pulsante -->
+    <script>
+        // Mostra il pulsante quando si scorre 100px verso il basso
+        window.onscroll = function() {
+            var button = document.getElementById("scrollToTopBtn");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                button.classList.add("show");
+            } else {
+                button.classList.remove("show");
+            }
+        };
+
+        // Funzione per scorrere fino all'inizio della pagina
+        function scrollToTop() {
+		    document.documentElement.scrollTop = 0;
+			document.body.scrollTop = 0;
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+	
 			<h2>IN AGGIORNAMENTO</h2>
 			<hr>
 			
@@ -47,6 +77,12 @@
 			<div class="spazio"></div>
 			<div class="spazio"></div>
 
+    <ul>
+		    <h5>
+		       <a href="#6.11">L12: Il mondo dei vettori</a>
+			</h5>
+			
+	</ul>
 			
 	<hr>		
 			
