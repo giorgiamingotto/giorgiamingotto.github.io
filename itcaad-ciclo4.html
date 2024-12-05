@@ -19,18 +19,41 @@
 				<li><a href="itcaad-ciclo3.html">ciclo III</a>
 				<li><a href="midterm-exam.html">midterm exam</a>
 				<li><a href="itcaad-ciclo4.html">ciclo IV</a>
-				<li><a href="itcaad-ciclo5.html">ciclo V</a>
-				<li><a href="itcaad-ciclo6.html">ciclo VI</a>
-				<li><a href="itcaad-ciclo7.html">ciclo VII</a>
 			</ul>
 			<div>
 			    <img src="logo.png" width="300" height="150">
 			</div>
 			<div class="logo">
-			     <h2>giorgia mingotto</h2>
+			     <a href="scrollToTopBtn"><h2>giorgia mingotto</h2>
 		    </div>
-			<h2>IN AGGIORNAMENTO</h2>
-			<hr>
+			
+<a id="#scrollToTopBtn"></a>
+
+    <!-- Contenuto della pagina -->
+    <div style="height:10px;">↑</div>
+
+    <!-- Pulsante "Torna su" -->
+    <button onclick="scrollToTop()" id="scrollToTopBtn">↑</button>
+
+    <!-- JavaScript per gestire il pulsante -->
+    <script>
+        // Mostra il pulsante quando si scorre 100px verso il basso
+        window.onscroll = function() {
+            var button = document.getElementById("scrollToTopBtn");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                button.classList.add("show");
+            } else {
+                button.classList.remove("show");
+            }
+        };
+
+        // Funzione per scorrere fino all'inizio della pagina
+        function scrollToTop() {
+		    document.documentElement.scrollTop = 0;
+			document.body.scrollTop = 0;
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>			
 			
 			<h3>ITCAAD</h3>
 			<a class="evi-big" href="http://www.arc1.uniroma1.it/saggio/Didattica/Cad/2024-25/index.htm">Link al corso</a>
@@ -45,9 +68,115 @@
 			
 			<div class="spazio"></div>
 			<div class="spazio"></div>
+	
+	<ul>
+	        <h5>
+			    <a href="#27.11">L16: Costruzione vettoriale del mondo</a>
+			</h5>
+	</ul>
+	
+	        <div class="spazio"></div>
 
 			
-	<hr>		
+	<hr>	
+	        <div class="spazio"></div>
+			
+			
+<div class="sezione">
+    <div class="titolo">
+	<section id="27.11">
+	</section>
+	        <h6 id="date">27.11.2024</h6>
+			<h4>L16: Costruzione vettoriale del mondo</h4>
+	</div>
+	
+	<div class="testo">
+	        <h5>La creazione di un Mondo Tridimensionale con Leonardo 3</h5>
+	        <p>
+			   Come fa Leonardo 3 a trasmettere dei dati tridimensionali con le conoscenze del vettoriale?
+			</p>
+			<div class="container">
+			    <img src="coordinata z.jpg" width="600" height="600">
+				<p class="didascalia">Giorgia Mingotto, <i>creazione di una nuova coordinata z</i>
+		        </p>
+			</div>
+			<p>
+			   Partiamo da una griglia bidimensionale.
+               <br />Per concepire il passaggio al 3D, aggiungiamo una nuova dimensione tramite il vettore z(A',...,Z').
+			   <br />Ad esempio, un punto P(B,2) in 2D ha coordinate (B,2,0), nel 3D, queste diventano (B,2,B').
+			   <br />Questo approccio localizzativo permette di specificare con precisione la posizione di un elemento nello spazio tridimensionale. Parliamo quindi di un nuovo <b>sistema localizzato vettoriale</b> nel quale viene introdotta una nuova coordinata z.
+			</p>
+			<p>
+			   Le domande interessanti appartengono a due famiglie:
+			    <ul>
+			        <li>capire un formalismo forte per generare oggetti 3d</li>
+					<li>capire un sistema intelligente per trasmettere le informazioni</li>
+				</ul>
+			<p>Parliamo quindi di un Assioma che conferma che esiste solo il punto che esiste, al limite, come posizione.
+			</p>
+			
+			<h5>Approccio costruttivo: Creazione Tridimensionale</h5>
+			<p>
+			   Cosa si realizza con un punto/posizione?
+               Si possono fargli fare dei movimenti che appartengono sostanzialmente a due categorie:
+			    <ul>
+			        <li><b>ESTRUSIONE</b>
+					<br />Un metodo che parte da una sezione tipo, estrudendo il profilo lungo un asse. Tipico nel mondo meccanico (ad esempio le travi). Gli elementi necessari per realizzare l'estrusione sono la <b>sezione</b>, la forma base e l'<b>asse di estrusione</b>, ovvero la direzione in cui avviene l'estrusione.
+					<br /><b>FASCIATURA</b>, una sottocategoria dell'estrusione, consiste nel collegare più sezioni, anche di dimensioni diverse, per creare forme complesse (es. il fondo di una barca). Questo processo viene chiamato lofting.
+					</li>
+					<li><b>ROTAZIONE</b>
+					<br />Simile al funzionamento di un tornio, si basa sulla rotazione di un profilo attorno a un asse. Gli elementi necessari per creare una rotazione sono l'<b>asse di rotazione</b>, che può essere interno o tangente al profilo e un <b>numero minimo di rotazioni</b> - 3 - necessarie per creare una figura chiusa.
+					</li>
+			    </ul>
+			</p>
+			<h5>Logica Costruttiva: Movimento e Realtà Tridimensionale</h5>
+			<p>
+			   Il movimento è alla base della generazione di forme tridimensionali:
+			   <ul>
+			        <li><b>Estrusione</b>: Movimento lineare</li>
+					<li><b>Rotazione</b>: Movimento circolare</li>
+					<li><b>Triangolo</b>: Movimento chiuso</li>
+					<li><b>Cerchio</b>: Movimento aperto (infinito)</li>
+			   </ul>
+			</p>
+			<p>
+			   Se applichiamo il movimento ai solidi, possiamo uscire dalla concezione tradizionale della tridimensionalità, generando nuove realtà.
+			   Infatti il <b>movimento</b> come dire <i>"promuove"</i> di un livello. Abbiamo quindi:
+			   <ul><i>
+			        <li>dal <b>punto</b> progrediamo nella famiglia delle <b>rette</b></li>
+					<li>dalla <b>retta</b> progrediamo nella famiglia delle <b>superfici</b></li>
+					<li>dalla <b>superficie</b> progrediamo nella famiglia dei <b>solidi</b></li>
+					<li>dai <b>solidi</b> progrediamo in famiglie di <b>complessità crescenti</b>, solamente intuibili</li>
+			   </i></ul>
+			</p>
+			<h5>Forme Costruttive Naturali: Approccio Booleano</h5>
+			<p>
+			   Le forme booleane si ispirano alla natura e possono avere relazioni reciproche, basandosi su operazioni di unione, sottrazione e intersezione:
+			   <ul>
+			        <li><b>Unione</b>: A + B = C</li>
+					<li><b>Sottrazione</b>: A - B = D</li>
+					<li><b>Intersezione</b>: Rimane solo il nucleo comune di due forme, A ∩ B</li>
+			   </ul>
+			<div class="container">
+			    <img src="booleane.png" width="1000" height="192">
+				<p class="didascalia">Giorgia Mingotto, <i>creazione di una nuova coordinata z</i>
+		        </p>
+			</div>
+			<h5>Matematica Generativa e Costruttiva</h5>
+			<p>
+			   Le funzioni matematiche non sono solo strumenti generativi, ma anche costruttivi. I robot, ad esempio, lavorano basandosi su equazioni che generano forme tridimensionali.
+			   Il tutto si evolve con la parametrizzazione delle informazioni, fondamentale nel passaggio all'esecuzione.
+			</p>
+			<h5>Dal Progetto al 3D Printing</h5>
+			<p>
+			   Grazie a tecniche avanzate, come quelle sviluppate da 
+			   <A class="evi-big" href="https://www.instagram.com/enrico.dini/">Enrico Dini</a>, 
+			   il 3D printing ha trovato applicazione nella creazione di strutture complesse come barriere frangionde e reef artificiali, utili per la ricolonizzazione e la lotta all’inquinamento.
+			</p>
+	</div>
+</div>
+		
+	<hr>	
 			
 			<!--PER I TITOLI, h1-h6 da + a - importante
 			<h1>Home Page</h1>
