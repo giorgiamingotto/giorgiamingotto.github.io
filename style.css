@@ -4,7 +4,9 @@ html{
 
 body{
 	background: black;
-    font-family: "Verdana", sans-serif;
+    font-family: "Montserrat", sans-serif;
+	width: 90%; /* Larghezza del contenuto */
+    margin: 0 auto; /* Margine automatico a destra e sinistra per centrare */
 }
 h1,
 h2,

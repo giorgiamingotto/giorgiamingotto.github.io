@@ -21,16 +21,40 @@
 				<li><a href="itcaad-ciclo4.html">ciclo IV</a>
 				<li><a href="itcaad-ciclo5.html">ciclo V</a>
 				<li><a href="itcaad-ciclo6.html">ciclo VI</a>
-				<li><a href="itcaad-ciclo7.html">ciclo VII</a>
 			</ul>
 			<div>
 			    <img src="logo.png" width="300" height="150">
 			</div>
 			<div class="logo">
-			     <h2>giorgia mingotto</h2>
+			     <a href="scrollToTopBtn"><h2>giorgia mingotto</h2>
 		    </div>
-			<h2>IN AGGIORNAMENTO</h2>
-			<hr>
+<a id="#scrollToTopBtn"></a>
+
+    <!-- Contenuto della pagina -->
+    <div style="height:10px;">↑</div>
+
+    <!-- Pulsante "Torna su" -->
+    <button onclick="scrollToTop()" id="scrollToTopBtn">↑</button>
+
+    <!-- JavaScript per gestire il pulsante -->
+    <script>
+        // Mostra il pulsante quando si scorre 100px verso il basso
+        window.onscroll = function() {
+            var button = document.getElementById("scrollToTopBtn");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                button.classList.add("show");
+            } else {
+                button.classList.remove("show");
+            }
+        };
+
+        // Funzione per scorrere fino all'inizio della pagina
+        function scrollToTop() {
+		    document.documentElement.scrollTop = 0;
+			document.body.scrollTop = 0;
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>			
 			
 			<h3>ITCAAD</h3>
 			<a class="evi-big" href="http://www.arc1.uniroma1.it/saggio/Didattica/Cad/2024-25/index.htm">Link al corso</a>
@@ -38,16 +62,213 @@
 			
 			<h3>Ciclo 5</h3>
 			
-			<h4>Progetti strategici, data driven
-			   <br />L'organizzazione delle informazioni
+			<h4>L'organizzazione delle informazioni in Modelli
+			   <br />Lo spreadsheet
 			   <br />Il database
 			</h4>
 			
 			<div class="spazio"></div>
 			<div class="spazio"></div>
 
+    <ul>
+	        <h5>
+			    <a href="#11.12">L19: Spreadsheet. Il mondo del "what if"</a>
+			</h5>
+			<h5>
+			    <a href="#11.12.1">L20: DataBase. Le informazioni A&N Strutturate e il database grafico/geografico (GIS)</a>
+			</h5>
+
+	</ul>
+	
+	        <div class="spazio"></div>
+
 			
-	<hr>		
+	<hr>	
+	        <div class="spazio"></div>
+			
+			
+<div class="sezione">
+    <div class="titolo">
+	<section id="11.12.1">
+	</section>
+	        <h6 id="date">11.12.2024</h6>
+			<h4>L20: Database
+			    <br/>Le informazioni A&N strutturate e il database grafico/geografico (GIS)</h4>
+	</div>
+	
+	<div class="testo">
+	    <h5>Dal Foglio Elettronico al Database
+		<br/>Leonardo 5</h5>
+		<p>
+		    Partendo da un foglio elettronico, qual è il salto che ci porta al database? Prima di rispondere, è essenziale definire cosa sia un database. Un esempio storico è il <b>censimento</b>, uno dei primi database creati.
+			<br/>Se volessimo realizzare un censimento della nostra classe, inizieremmo da una <b>griglia</b> con:
+			<ul>
+			    <li><b>fields</b> (colonne), che rappresentano attributi omogenei come "nome" o "cognome"</li>
+				<li><b>records</b> (righe), che rappresentano le entità o gli individui</li>
+			</ul>
+		</p>
+		<p>
+		    Questo modello deriva dal <b>mondo dei vettori</b>: le entità sono le righe, mentre le colonne contengono campi omogenei. Per funzionare, un database richiede che i fields siano ben definiti e coerenti. Inoltre, i database moderni possono contenere non solo dati numerici o testuali, ma anche immagini e altri tipi di informazioni.
+			<br/>Un esempio è il database utilizzato nell'<i>atlas</i> del libro <b>UnLost Territories</b>, dove ogni progetto è associato a un codice, al tipo di corso, al numero dell'area, al punteggio e ai nomi degli studenti progettisti.
+			<br/>Questo rappresenta il salto concettuale: da una semplice griglia a un sistema strutturato di <b>records</b> e <b>fields</b> per descrivere entità e attributi.
+		</p>
+		
+		<h5>Caos vs Ordine: Umano vs Macchina
+		<br/>Ordine Tradizionale: L'Archivio</h5>
+		<p>
+		    Un esempio classico di database è l'archivio. Negli anni '40, per organizzare un archivio, si <b>catalogava</b> in modo cronologico, alfabetico o per altre convenzioni. <i>L’obiettivo era garantire un accesso rapido e semplice alle informazioni</i>.
+		</p>
+		<h5>La Rivoluzione Informatica: Search Don't Sort</h5>
+		<p>
+		    Con l’avvento di 
+			<a class="evi-big" href="https://workspace.google.com/intl/it/gmail/">Gmail</a>, 
+			il motto è diventato <i>"Search, don't sort"</i> (cerca, non organizzare). Questa filosofia si basa sul fatto che per un computer è più semplice cercare che catalogare, mentre per l’uomo è vero il contrario. Questo concetto ha trasformato il modo in cui gestiamo le informazioni.
+			<br/>Infatti un esempio straordinario è 
+			<a class="evi-big" href="https://www.amazon.it/">Amazon</a>, 
+			uno dei più grandi database fisici al mondo. Nei suoi centri di distribuzione, i prodotti non sono organizzati ordinatamente per categorie, ma in modo apparentemente caotico. Questo approccio:
+			<ul>
+			    <li>facilita la ricerca e il recupero grazie a sistemi automatizzati</li>
+				<li>consente al personale di individuare velocemente gli oggetti</li>
+			</ul>
+		</p>
+		
+		<h5>Amazon vs Supermercati</h5>
+		<p>
+		    Amazon rappresenta il salto dalla logica tradizionale del supermercato a un sistema basato su <i>search, don't sort</i>. Ad esempio, se dovessi acquistare un libro:
+			<ul>
+			    <li>in un supermercato, un libro sarebbe in un reparto specifico
+				<li>in un magazzino Amazon, il libro è associato a un codice univoco che ne indica la posizione e verrà recuperato grazie al GPS</li>
+			</ul>
+		</p>
+		<p>
+		    L'efficienza deriva dall'integrazione tra intelligenza artificiale e umana. Questo approccio si applica anche ad altri ambiti, come il <b>car sharing</b>, dove una disposizione casuale delle auto ne aumenta l’utilizzo.
+		</p>
+		
+		<h5>Database Geografici e Georeferenziazione
+		<br/>Georeferenziazione: Il Centro del Mondo</h5>
+		<p>
+		    Un aspetto chiave della moderna gestione dei dati è la <b>georeferenziazione</b>. Grazie ai sensori degli smartphone, ogni foto scattata può essere associata a una posizione geografica, rendendo possibile ritrovare un luogo specifico su 
+			<a class="evi-big" href="https://www.google.it/intl/it/earth/index.html">Google Earth</a>.
+			<br/>Quando apriamo una mappa, il nostro <b>puntino blu</b> rappresenta la nostra posizione: <i>il centro di un mondo dinamico</i>. Questo approccio si collega a strumenti come i <b>GIS</b> (<b>Geographical Information Systems</b>), che rappresentano database intelligenti dove le entità sono georeferenziate.
+		</p>
+		
+		<h5>Open Data e GIS</h5>
+		<p>
+		    Gli <b>Open Data</b> (dati pubblici disponibili a livello comunale o regionale) sono un esempio di database geografico. Questi dati, spesso forniti in formato <b>georeferenziato</b>, possono essere visualizzati e analizzati con strumenti come 
+			<a class="evi-big" href="https://www.qgis.org/download/">QGIS</a>.
+		</p>
+		
+		<h5>In conclusione</h5>
+		<p>
+		    Il salto dal foglio elettronico al database rappresenta una trasformazione fondamentale nella gestione delle informazioni. Grazie a strumenti moderni come i GIS e ai principi di "search, don't sort", i database non sono più solo strumenti statici, ma <b>sistemi dinamici e intelligenti</b>, in grado di connettere dati, spazi e persone in modi rivoluzionari.
+		</p>
+	</div>
+</div>
+
+    <hr>
+			
+			
+			
+<div class="sezione">
+    <div class="titolo">
+	<section id="11.12">
+	</section>
+	        <h6 id="date">11.12.2024</h6>
+			<h4>L19: Spreadsheet
+			    <br/>Il mondo del "what if"</h4>
+	</div>
+	
+	<div class="testo">
+	    <h5>Caos, Complessità e Modelli Gerarchici
+		<br/>Leonardo 4</h5>
+		<p>
+		    Immaginiamoci nuovamente nei panni di <b>Leonardo</b>: come possiamo trasmettere dati strutturati – numeri, testi e relazioni – a distanza?
+			<br/>La risposta risiede come sempre nell’uso di una griglia, un metodo organizzato che richiede una convenzione ben definita. Non basta però un’equazione: è necessaria una funzione.
+			<br/>Entra quindi in scena lo <b>Spreadsheet</b> (<i>foglio elettronico</i>), rappresentato al meglio da strumenti come 
+			<a class="evi-big" href="https://www.microsoft.com/it-it/microsoft-365/excel?market=it"><i>Excel</i></a>.
+			Questo sistema è composto da righe, colonne e celle, dove ogni cella può:
+			<ul>
+			    <li>contenere dati (<b>celle-contenuto</b>)</li>
+				<li>restituire risultati derivati da altre celle (<b>celle-risultato</b>)</li>
+			</ul>
+		</p>
+		<p>
+		    Il salto concettuale è che una <b>cella-risultato</b> può contemporaneamente diventare una <b>cella-contenuto</b>. Questo crea una <i><b>struttura dinamica di interconnessioni</b></i>, dove ogni elemento è in relazione con gli altri. 
+			<br/>Questa caratteristica, definita <b><i>interconnessione dinamica delle informazioni</i></b>, rappresenta il <b>carattere rivoluzionario del sistema</b>.
+		</p>
+		
+		<h5>Principi del Foglio di Calcolo</h5>
+		<p>
+		    Un foglio di calcolo è una tabella (o foglio di lavoro) composta da celle in cui è possibile inserire dati, numeri o formule. Questa semplicità genera due conseguenze fondamentali:
+			<ul>
+			    <li><b>interconnessione dinamica dei dati</b></li>
+				<li><b>modelli gerarchici, come strutture ad albero o a cascata</b></li>
+			</ul>
+		</p>
+		<p>
+		    Questi aspetti danno vita a un <b>modello intelligente</b>, in cui le funzioni e le formule trasformano i dati in informazioni utili.
+		</p>
+		
+		<h5>Rivoluzione in Architettura</h5>
+		<p>
+		    Lo spreadsheet ha avuto un impatto rivoluzionario in ambiti come l'architettura parametrica. Qui, modificando parametri in un foglio di calcolo, il modello si aggiorna dinamicamente.
+			<br/>È l'essenza di strumenti come <b>Grasshopper</b>, dove i cambiamenti nei dati influiscono istantaneamente sulla geometria del progetto.
+		</p>
+		
+		<h5>La Logica "What If..."
+		<br/>Deduzione vs Induzione</h5>
+		<p>
+		    In italiano, esistono due approcci logici principali:
+			<ul>
+			    <li><b>Logica induttiva</b>: "<i>Se... allora...</i>" (<i>if... then...</i>)</li>
+				<li><b>Logica deduttiva</b>: "<i>Cosa succede se...</i>" (<i>what if...</i>)</li>
+			</ul>
+		</p>
+		<p>
+		    La logica deduttiva è il cuore della nuova architettura, in cui si lavora per <b>ipotesi</b> e non per certezze. Si procede per <b>salti logici</b>, esplorando molteplici scenari. Il modello finale è il risultato di una verifica su una vasta gamma di ipotesi.
+			<br/>Questo approccio è noto come il <b>mondo dell’ipotesi</b>.
+		</p>
+		
+		<h5>Rivoluzione Informatica in Architettura</h5>
+		<p>
+		    Sappiamo bene che l’informatica trasforma i dati in informazioni attraverso una <b>convenzione</b>. Secondo lo <i><b>Zingarelli</b></i>, "<i>informare</i>" significa <b>modellare secondo una forma</b>. Da qui, nascono due concetti chiave:
+			<ul>
+			    <li>il <b>modello</b> è la forma assunta dalle informazioni</li>
+				<li>la <b>modellazione</b> è il processo di dare forma ai dati</li>
+			</ul>
+		</p>
+		<p>
+		    Di conseguenza, un progetto architettonico può essere visto come un insieme di <b>equazioni interconnesse</b>, in cui:
+			<ul>
+			    <li>non si progettano forme statiche, ma <b>famiglie di forme possibili</b></li>
+				<li>queste forme variano dinamicamente entro <b>parametri definiti</b></li>
+			</ul>
+		</p>
+		<p>
+		    Questo nuovo approccio sostituisce la geometria euclidea assoluta con <b>famiglie tipologiche</b>.
+			<br/>Il processo progettuale diventa quindi una rete fluttuante di informazioni modellabili, simile a un sistema di equazioni interconnesse.
+		</p>
+		
+		<h5>Conclusione: Il Mondo dei Modelli Informatici</h5>
+		<p>
+		    Oggi, l’architettura opera nel mondo dei <b>modelli informatici</b>, dove le informazioni sono collegate tra loro in modo dinamico. Questo approccio consente di:
+			<ul>
+			    <li>creare configurazioni variabili e adattabili</li>
+				<li>raggiungere un alto <b>indice di variabilità</b> nei progetti</li>
+			</ul>
+		</p>
+		<p>
+		    Progettare significa dunque lavorare all’interno di sistemi dinamici, dove ogni modifica genera nuove configurazioni, mantenendo viva la logica <b><i>"What if..."</i></b>.
+		</p>
+
+
+	</div>
+</div>
+
+    <hr>
+		
+	
+	
 			
 			<!--PER I TITOLI, h1-h6 da + a - importante
 			<h1>Home Page</h1>
