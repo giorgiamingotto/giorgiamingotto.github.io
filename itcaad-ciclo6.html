@@ -21,20 +21,45 @@
 				<li><a href="itcaad-ciclo4.html">ciclo IV</a>
 				<li><a href="itcaad-ciclo5.html">ciclo V</a>
 				<li><a href="itcaad-ciclo6.html">ciclo VI</a>
-				<li><a href="itcaad-ciclo7.html">ciclo VII</a>
 			</ul>
 			<div>
 			    <img src="logo.png" width="300" height="150">
 			</div>
 			<div class="logo">
-			     <h2>giorgia mingotto</h2>
+			    <a href="scrollToTopBtn"><h2>giorgia mingotto</h2>
 		    </div>
-			<h2>IN AGGIORNAMENTO</h2>
-			<hr>
+<a id="#scrollToTopBtn"></a>
+
+    <!-- Contenuto della pagina -->
+    <div style="height:10px;">↑</div>
+
+    <!-- Pulsante "Torna su" -->
+    <button onclick="scrollToTop()" id="scrollToTopBtn">↑</button>
+
+    <!-- JavaScript per gestire il pulsante -->
+    <script>
+        // Mostra il pulsante quando si scorre 100px verso il basso
+        window.onscroll = function() {
+            var button = document.getElementById("scrollToTopBtn");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                button.classList.add("show");
+            } else {
+                button.classList.remove("show");
+            }
+        };
+
+        // Funzione per scorrere fino all'inizio della pagina
+        function scrollToTop() {
+		    document.documentElement.scrollTop = 0;
+			document.body.scrollTop = 0;
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>			
 			
 			<h3>ITCAAD</h3>
 			<a class="evi-big" href="http://www.arc1.uniroma1.it/saggio/Didattica/Cad/2024-25/index.htm">Link al corso</a>
 			<div class="spazio"></div>
+			
 			
 			<h3>Ciclo 6</h3>
 			
@@ -46,9 +71,192 @@
 			
 			<div class="spazio"></div>
 			<div class="spazio"></div>
+        <ul>
+		    <h5>
+			    <a href="#17.12">L23: Alla base del BIM: Modelli Gerarchici</a>
+			</h5>
+			<h5>
+			    <a href="#07.01">L24: Il nuovo catalizzatore</a>
+			</h5>
+			
+		    <div class="spazio"></div>
 
 			
-	<hr>		
+	<hr>	
+	        <div class="spazio"></div>
+			
+<div class="sezione">
+    <div class="titolo">
+	<section id="07.01">
+	</section>
+	        <h6 id="date">07.01.2025</h6>
+			<h4>L24: Il nuovo catalizzatore</h4>
+			<a class="evi-small" href="http://www.arc1.uniroma1.it/saggio/Didattica/Cad/2024-25/LEZ/24/index.htm">vai alla sezione</a>
+	</div>
+	
+	<div class="testo">
+	        <h5>Architettura, Informazione e Interattività</h5>
+			<p>
+			    È fondamentale comprendere come il <b>tema dell'informazione</b>, costituente essenziale della <b>Terza Ondata</b> (secondo Toffler), possa raggiungere il livello più alto: quello <b>estetico</b>. In che modo l'architettura può trasformarsi in <b>comunicazione</b> (come il progetto Kiasma)? E come l'informazione diventa il perno della progettazione e costruzione? Non si tratta solo di un aspetto tecnico, ma anche di una dimensione estetica e simbolica.
+				<br/>Abbiamo introdotto il concetto di <b>processo di reificazione</b>, ovvero la capacità dell’architettura di trasformare in realtà tangibile processi legati al tempo, alle tecniche, e agli strumenti conoscitivi e geometrici.
+				<ul>
+				    <li>Quando abbiamo discusso della costruzione delle piramidi, la loro separazione dalle conoscenze geometriche è stata un esempio di reificazione.</li>
+					<li>Lo stesso vale per l’elaborazione della prospettiva nel Rinascimento, che ha tradotto concetti teorici in strumenti concreti per rappresentare la realtà.</li>
+				</ul>
+			</p>
+			<p>
+			    Questo modo di pensare, tipico del ragionamento <b>analitico-industriale</b>, mette in evidenza il forte legame tra strumenti e architettura: la tecnologia plasma il processo creativo e costruttivo.
+				<br/>Nell’informatica, il punto centrale è la creazione di un <b>modello ad albero di relazioni</b>, dove le entità sono collegate dinamicamente. Questo modello ha caratteristiche specifiche:
+				<ul>
+				    <li><b>Interattivo</b>: Cambiando alcune relazioni o condizioni, si generano automaticamente modifiche nel contesto applicativo.</li>
+					<li><b>Dinamico</b>: Il modello evolve continuamente in base alle informazioni ricevute.</li>
+ 				</ul>
+			</p>
+			<p>
+			    Poiché abbiamo sottolineato l'importanza della reificazione, è naturale che anche l’architettura aspiri a somigliare al suo modello di riferimento tecnologico, ovvero l’informatica. Questo porta a un'architettura sempre più <b>interattiva</b>, un aspetto cruciale che funge da catalizzatore per nuove modalità progettuali.
+			</p>
+			
+			<h5>L'interattività nell'architettura</h5>
+			<p>
+			    Il concetto di <b>interattività</b> può assumere diverse declinazioni nel contesto architettonico, ciascuna con implicazioni specifiche.
+				<ul>
+				    <li><b>Interattività processuale</b>: Durante la progettazione, strumenti come il BIM permettono scelte dinamiche e in tempo reale. Ad esempio:
+					<ul>
+					    <li>cambiare un materiale</li>
+						<li>modificare lo spessore di un muro con un semplice output</li>
+						<li>aggiornare parametri geometrici o strutturali. L’interattività riguarda l’<b>intero processo progettuale</b>, rendendo ogni fase collaborativa e flessibile.</li>
+					</ul></li>
+					<li><b>Interattività proiettiva</b>: Si riferisce alla capacità di <b>proiettare o incorporare strati interattivi</b> (<i>layer</i>) su un'architettura, trasformandola senza modificarne la struttura di base.
+					<ul>
+					    <li><a class="evi-big" href="https://www.studioazzurro.com/"><b>Studio Azzurro</b></a> è un esempio emblematico: crea ambienti interattivi con layer visivi e sensoriali che modificano l’esperienza spaziale.</li>
+						<li><a class="evi-big" href="https://fuksas.com/"><b>Massimiliano Fuksas</b></a> alla Biennale di Venezia del 2000 ha realizzato un intervento che esplora questa dimensione.</li>
+						<li><a class="evi-big" href="http://blinkenlights.net/"><b>Project Blinkenlights</b></a> a Berlino ha reso interattiva la facciata di un edificio, trasformandola in uno schermo su cui giocare a Pong.</li>
+						<li><a class="evi-big" href="https://www.jasonbruges.com/"><b>Jason Bruges</b></a>, architetto inglese, realizza installazioni che combinano arte e funzionalità, mostrando come l’interattività possa risolvere problemi o essere un manifesto artistico.</li>
+					</ul></li>
+					<li><b>Interattività fisica</b>: In questo caso, è l’architettura stessa a diventare interattiva, andando oltre il concetto di "pelle" o layer aggiuntivo. Alcuni esempi significativi includono:
+					<ul>
+					    <li><a class="evi-big" href="https://calatrava.com/"><b>Santiago Calatrava</b></a>: <i>Venice Canopy</i> e il 
+						    <a class="evi-big" href="https://mam.org/">Milwaukee Art Museum</a>, opere in cui la struttura si muove e interagisce con l’ambiente circostante.</li>
+						<li><a class="evi-big" href="http://www.hyperbody.nl/">Hyperbody: Installazioni interattive mobili che rispondono dinamicamente alle relazioni tra i loro elementi.</li>
+						<li><a class="evi-big" href="https://dsrny.com/"><b>Diller + Scofidio</b></a>: 
+						    <a class="evi-big" href="https://dsrny.com/project/blur-building">Blur Building</a> (Neuchâtel, 2002), una struttura in ferro sul lago che vaporizza acqua in base a fattori ambientali come temperatura, ora del giorno e meteo. Questa opera rappresenta un’architettura che incorpora il dinamismo e l’adattabilità tipici dell’informatica.</li>
+					</ul></li>
+				</ul>
+			</p>
+			
+			<h5>Architettura e Smart Cities</h5>
+			<p>
+			    L’interattività non si limita al singolo edificio, ma si estende al livello urbano con il concetto di <b>smart cities</b>. In molte città del mondo, l'idea di interattività viene applicata alla scala dell’urbanistica, trasformando gli spazi urbani in sistemi dinamici e interconnessi. Questo approccio porta oltre i confini dell’architettura tradizionale, integrando tecnologie per migliorare la qualità della vita e l’efficienza dei servizi.
+			</p>
+			
+			<h5>Sintesi: Interattività come chiave dell’architettura contemporanea</h5>
+			<p>
+			    L’<b>interattività</b> è il tratto distintivo che connette l’architettura al paradigma informatico. Essa si manifesta a vari livelli:
+				<ul>
+				    <li><b>Processuale</b>, nella progettazione dinamica e collaborativa.</li>
+					<li><b>Proiettiva</b>, nei layer che trasformano gli spazi.</li>
+					<li><b>Fisica</b>, nelle strutture che reagiscono attivamente all’ambiente.</li>
+				</ul>
+			</p>
+			<p>
+			    L’interattività non solo ridefinisce il rapporto tra architettura e tecnologia, ma apre la strada a nuove modalità espressive e funzionali, dal livello dell’edificio a quello delle città intelligenti. In questo contesto, l’architettura diventa un sistema vivo, capace di rispondere, adattarsi e dialogare con il mondo che la circonda.
+			</p>
+	</div>
+</div>
+
+
+			<hr>		
+			
+			
+<div class="sezione">
+    <div class="titolo">
+    <section id="17.12">
+    </section>
+            <h6 id="date">17.12.2024</h6>
+            <h4>L23: Alla base del BIM
+			    <br/>Modelli gerarchici</h4>
+				<a class="evi-small" href="http://www.arc1.uniroma1.it/saggio/Didattica/Cad/2024-25/LEZ/23/index.htm">vai alla lezione</a>
+	</div>
+	
+	<div class="testo">
+	        <h5>Cos'è il BIM?</h5>
+			<p>
+			    Il termine 
+				<a class="evi-big" href="https://it.wikipedia.org/wiki/Building_Information_Modeling"><b>BIM</b></a> 
+				(<i>Building Information Modeling</i>) rappresenta un paradigma innovativo nel settore delle costruzioni, che non si limita all’edilizia e all’architettura in senso stretto, ma si estende al concetto globale di <b>costruzione integrata e multidisciplinare</b>. Si tratta di un approccio <b>olistico</b>, <b>digitale</b> e <b>cognitivo</b> che comprende la progettazione, la realizzazione e la gestione dell’intero ciclo di vita di un'opera.
+			</p>
+			
+			<h5>L'acronimo BIM: una visione stratificata</h5>
+			<p>
+			    Il significato di BIM si articola in tre dimensioni fondamentali:
+				<ul>
+				    <li><b>Building</b>: Non va inteso solo come "edificio" o "costruzione", ma nella sua accezione concettuale più ampia: l'<b>atto di costruire</b>. Questo include non solo la materializzazione di un'opera, ma anche l'organizzazione e la pianificazione dei processi legati al costruire. In inglese, il termine “building” è al contempo un <b>sostantivo</b> (il prodotto finito) e un <b>participio presente</b> (l’azione continua del costruire).</li>
+					<li><b>Information</b>: Il cuore del BIM è la <b>gestione delle informazioni</b>. Il termine evidenzia la stretta relazione tra il modello digitale e l’<b>informatica</b>. Il BIM è un sistema che organizza, archivia e condivide informazioni strutturate e interoperabili, grazie a formati standardizzati come l’<b>IFC</b> (<i>Industry Foundation Classes</i>). Ogni elemento del modello non è solo una rappresentazione geometrica, ma un contenitore di dati: materiali, costi, cronoprogrammi, manutenzione e molto altro.</li>
+					<li><b>Modeling</b>: La modellazione è il processo attraverso cui si costruisce un <b>modello virtuale</b>, una rappresentazione digitale tridimensionale e parametrica dell’opera. Tuttavia, il termine si estende oltre l’architettura: riguarda la <b>modellazione di fenomeni complessi</b>, applicabile in settori come la statistica, la fisica o l’economia. Nel contesto del BIM, “modeling” implica l’uso di strumenti avanzati per integrare dati e geometrie in un unico ambiente collaborativo.</li>
+				</ul>
+			</p>
+			
+			<h5>Dall’idea al sistema: l’evoluzione del BIM</h5>
+			<p>
+			    Il BIM nasce come visione rivoluzionaria negli anni ’70, grazie al lavoro del pioniere 
+				<a class="evi-big" href="https://en.wikipedia.org/wiki/Charles_M._Eastman">Charles Eastman</a>, 
+				che , che teorizzò il concetto di un <b>3D Database</b>: un modello tridimensionale capace di contenere dati strutturati e aggiornabili in tempo reale. Dopo decenni di sperimentazione, quel sogno è diventato realtà. Oggi, il BIM rappresenta uno <b>standard operativo</b> e una <b>best practice</b> nel settore delle costruzioni.
+			</p>
+				
+			
+			<h5>Il BIM oggi: un obbligo normativo</h5>
+			<p>
+			    Non è più solo una possibilità o un'opportunità: in molti Paesi il BIM è ormai un <b>obbligo normativo</b>. A livello europeo, ad esempio, la direttiva <b>2014/24/UE</b> richiede l’uso di metodologie digitali come il BIM per i progetti finanziati con fondi pubblici. Anche in Italia, il Decreto Ministeriale 560/2017 (<i>Decreto BIM</i>) ha introdotto una progressiva obbligatorietà del BIM per gli appalti pubblici.
+			</p>
+			
+			<h5>BIM: un processo, non un software</h5>
+			<p>
+			    Uno degli errori più comuni è pensare che il BIM sia un software. In realtà, è un <b>processo collaborativo</b> che coinvolge l’intera filiera: progettisti, costruttori, committenti e manutentori. Attraverso il BIM, tutte le parti condividono un <b>ambiente di dati comune</b> (<b>CDE, Common Data Environment</b>), migliorando la <b>trasparenza</b>, la <b>tracciabilità delle decisioni</b> e l’<b>efficienza operativa</b>.
+			</p>
+			
+			<h5>Leonardo 6</h5>
+			<p>
+			    Che legame c’è tra il BIM e il genio di <b>Leonardo da Vinci</b>? Leonardo ci ha insegnato che il progresso umano si basa su un principio fondamentale: <b>la linea dell’astrazione</b>.
+				<br/>Nell'evoluzione tecnologica, le domande più interessanti si articolano in due grandi categorie:
+				<ul>
+				    <li><b>Capire un formalismo forte</b> per generare oggetti tridimensionali coerenti e gestibili.</li>
+					<li><b>Trovare un sistema intelligente</b> per trasmettere, organizzare e gestire queste informazioni.</li>
+				</ul>
+			</p>
+			<p>
+			    Questi due aspetti si riflettono perfettamente nel BIM.
+				<br/>Nello specifico, il secondo punto si basa su un'idea semplice ma rivoluzionaria che consente di creare una <b>struttura semantica</b>, <b>interattiva</b> e <b>intelligente</b>: la distinzione tra <b>primitivi</b> e <b>istanze</b>:
+				<ul>
+				    <li><b>Primitivo</b>: L’oggetto tridimensionale di base, che contiene la descrizione geometrica completa. Esso rappresenta l’essenza dell’informazione, organizzata in un <b>record</b> con numerosi <b>campi</b> (o <i>fields</i>) di varia natura convenzionale.</li>
+					<li><b>Instance</b>: La "chiamata" di un primitivo nello spazio tridimensionale, definita da tre parametri fondamentali:
+					<ul>
+					    <li><b>Posizione</b></li>
+						<li><b>Scala</b></li>
+						<li><b>Rotazione</b></li>
+					</ul>
+				</ul>
+			</p>
+			<p>
+			    Questa struttura consente la <b>nidificazione</b>: un oggetto può includere al proprio interno altre <b>istanze</b> di oggetti inferiori, creando una gerarchia ricorsiva. A sua volta, l'oggetto nidificato può essere richiamato a un livello superiore, mantenendo intatta la sua struttura gerarchica e i collegamenti.
+				<br/>Questo sistema è rivoluzionario per quattro motivi fondamentali:
+				<ul>
+				    <li><b>Efficiente</b>: Riduce la ridondanza, consentendo un uso ottimale delle risorse computazionali.</li>
+					<li><b>Intelligente</b>: La potenza del sistema risiede nella sua capacità di gestire informazioni complesse in modo modulare e scalabile.</li>
+					<li><b>Semantico</b>: Ogni elemento è dotato di significato, relazioni e proprietà, favorendo una comprensione e gestione profonda dei dati.</li>
+					<li><b>Interattivo</b>: Permette agli utenti di navigare tra livelli diversi, esplorando e modificando la struttura del modello in modo dinamico e ricorsivo.</li>
+				</ul>
+			</p>
+			<p>
+			    La distinzione tra primitivo e istanza, così come la gerarchia dei modelli, riflette l'idea leonardesca secondo cui il progresso si basa sulla semplificazione e sull'astrazione. Proprio come il codice Morse o il sistema binario rappresentano una potente astrazione del linguaggio umano, il BIM astrae la complessità della realtà costruita, trasformandola in un <b>modello digitale vivo e interconnesso</b>.
+			</p>
+			
+			<h5>Concludendo...</h5>
+			<p>
+			    Il <b>Building Information Modeling</b> non è solo una metodologia, ma un cambio di paradigma. Attraverso la sua struttura gerarchica, fondata sui principi di astrazione e organizzazione delle informazioni, il BIM rende possibile una gestione collaborativa, efficiente e innovativa dei progetti. In questo senso, il BIM non è solo un riflesso del passato, ma una proiezione verso il futuro del costruire.
+			</p>
+	</div>
+</div>
+			    
 			
 			<!--PER I TITOLI, h1-h6 da + a - importante
 			<h1>Home Page</h1>
