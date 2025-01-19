@@ -1,0 +1,117 @@
+ <html>
+	<head>
+		<title>giorgia mingotto</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<main>
+			<!--titolo-->
+			<ul id="menu-principale">
+			    <li><a href="index.html">HOME</a>
+				<li><a href="aboutme.html">ABOUT</a></li>
+				<li><a href="itcaad.html">ITCAAD</a>
+				<li><a href="html.html">HTML</a></li>
+				<li><a href="contatti.html">CONTATTI</a></li>
+			</ul>
+			<ul id="menu-itcaad">
+			    <li><a href="itcaad-ciclo1.html">ciclo I</a>
+				<li><a href="itcaad-ciclo2.html">ciclo II</a>
+				<li><a href="itcaad-ciclo3.html">ciclo III</a>
+				<!--<li><a href="midterm-exam.html">midterm exam</a>-->
+				<li><a href="itcaad-ciclo4.html">ciclo IV</a>
+				<li><a href="itcaad-ciclo5.html">ciclo V</a>
+				<li><a href="itcaad-ciclo6.html">ciclo VI</a>
+				<!--<li><a href="itcaad-ciclo4.html">ciclo IV</a>
+				<li><a href="itcaad-ciclo5.html">ciclo V</a>
+				<li><a href="itcaad-ciclo6.html">ciclo VI</a>
+				<li><a href="itcaad-ciclo7.html">ciclo VII</a>-->
+			</ul>
+			<ul id="menu-itcaad">
+			    <li><a href="midterm-exam.html">midterm exam</a>
+				<li><a href="M3-project-group.html">M3 project group</a>
+			</ul>
+			<div>
+			    <img src="logo.png" width="300" height="150">
+			</div>
+			<div class="logo">
+			     <a href="scrollToTopBtn"><h2>giorgia mingotto</h2>
+		    </div>
+			
+<a id="#scrollToTopBtn"></a>
+
+    <!-- Contenuto della pagina -->
+    <div style="height:10px;">↑</div>
+
+    <!-- Pulsante "Torna su" -->
+    <button onclick="scrollToTop()" id="scrollToTopBtn">↑</button>
+
+    <!-- JavaScript per gestire il pulsante -->
+    <script>
+        // Mostra il pulsante quando si scorre 100px verso il basso
+        window.onscroll = function() {
+            var button = document.getElementById("scrollToTopBtn");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                button.classList.add("show");
+            } else {
+                button.classList.remove("show");
+            }
+        };
+
+        // Funzione per scorrere fino all'inizio della pagina
+        function scrollToTop() {
+		    document.documentElement.scrollTop = 0;
+			document.body.scrollTop = 0;
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+			<hr>
+			
+			<h3>ITCAAD</h3>
+			<a class="evi-big" href="http://www.arc1.uniroma1.it/saggio/Didattica/Cad/2024-25/index.htm">Link al corso</a>
+			<div class="spazio"></div>
+			<h3>M3</h3>
+			<a class="evi-big" href="https://sites.google.com/view/m3-ttline/home">Link al sito</a>
+			<p>
+			    Siamo il gruppo M3, nato all’interno del corso di Teorie, Metodi e Strumenti per l’Informatica in Architettura (ITCAAD) dell’anno accademico 2024/2025, condotto dal professor Antonino Saggio presso la Facoltà di Architettura della Sapienza Università di Roma.
+				<br/>Guidati dagli insegnamenti del corso ITCAAD, che incoraggia un approccio critico e innovativo all’uso delle tecnologie digitali, il nostro gruppo mira a integrare competenze tecniche e creatività per proporre soluzioni efficaci alla riqualificazione della Linea 2 del tram Flaminio-Mancini di Roma.
+				<br/>L’obiettivo è migliorare il sistema di trasporto pubblico e valorizzare il contesto urbano, affrontando le sfide progettuali in modo consapevole e sperimentale.
+			</p>
+			
+			<div class="spazio"></div>
+
+        <ul>
+	    </ul>
+			
+	<hr>	
+			
+
+
+
+
+			
+			<!--PER I TITOLI, h1-h6 da + a - importante
+			<h1>Home Page</h1>
+			-->
+			<!--PER AGGIUNGERE PARAGRAFO:
+			<p>testo paragrafo</p>
+			-->
+			<!--PER AGGIUNGERE LINK:
+			<a href="https://giorgiamingottoitcaadsaggio2024-2025.blogspot.com/">Blog</a>
+			-->
+			<!--PER AGGIUNGERE IMMAGINE:
+			<img src="xxx.jpg" alt="">
+			-->
+			<!--PER AGGIUNGERE LISTA, punti: 
+			<ul>
+			<li>primo punto della lista</li>
+			<li>secondo punto della lista</li>
+			<li>terzo punto della lista</li>
+			-->
+			<!--LISTA CON COLLEGAMENTI-->
+		</main>	
+		<footer>
+		<p> copyright </p>
+		</footer>
+		
+	</body>
+</html>

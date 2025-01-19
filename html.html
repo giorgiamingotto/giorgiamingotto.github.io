@@ -1,0 +1,141 @@
+ <html>
+	<head>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>giorgia mingotto</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<main>
+			<!--titolo-->
+			<ul id="menu-principale">
+			    <li><a href="index.html">HOME</a>
+				<li><a href="aboutme.html">ABOUT</a></li>
+				<li><a href="itcaad.html">ITCAAD</a>
+				<li><a href="html.html">HTML</a></li>
+				<li><a href="contatti.html">CONTATTI</a></li>
+			</ul>
+			<div>
+			    <img src="logo.png" width="300" height="150">
+			</div>
+			<div class="logo">
+			     <a href="scrollToTopBtn"><h2>giorgia mingotto</h2>
+		    </div>
+			
+<a id="#scrollToTopBtn"></a>
+
+    <!-- Contenuto della pagina -->
+    <div style="height:10px;">↑</div>
+
+    <!-- Pulsante "Torna su" -->
+    <button onclick="scrollToTop()" id="scrollToTopBtn">↑</button>
+
+    <!-- JavaScript per gestire il pulsante -->
+    <script>
+        // Mostra il pulsante quando si scorre 100px verso il basso
+        window.onscroll = function() {
+            var button = document.getElementById("scrollToTopBtn");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                button.classList.add("show");
+            } else {
+                button.classList.remove("show");
+            }
+        };
+
+        // Funzione per scorrere fino all'inizio della pagina
+        function scrollToTop() {
+		    document.documentElement.scrollTop = 0;
+			document.body.scrollTop = 0;
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>		
+
+    <hr>	
+			
+			<h3>ITCAAD</h3>
+			<a class="evi-big" href=""></a>
+			<div class="spazio"></div>
+			
+			<h3>HTML</h3>
+			
+			<h4>Architettura del web
+			</h4>
+			
+			<div class="spazio"></div>
+	
+	<ul>
+	        <h5>
+		        <a href="#01">La creazione del sito</a>
+			</h5>
+			<h5>
+			    <a href="#02">La struttura di base con HTML</a>
+			</h5>
+			<h5>
+			    <a href="#03">Il Design con CSS</a>
+			</h5>
+			<h5>
+			    <a href="#04">Interattività con JavaScript</a>
+			</h5>
+			<h5>
+			    <a href="#05">Accessibilità e Ottimizzazione</a>
+			</h5>
+			<h5>
+			    <a href="#06">Uno sguardo al Codice</a>
+			</h5>
+			<h5>
+			    <a href="#07">Conclusione</a>
+			</h5>
+	</ul>
+	
+	        <div class="spazio"></div>
+
+			
+	<hr>	
+	        <div class="spazio"></div>
+			
+			
+			
+<div class="sezione">
+    <div class="titolo">
+	<section id="01">
+	</section>
+	        <h6 id="date">01</h6>
+			<h4>La creazione del sito
+			</h4>
+				<a class="evi-small" href=""></a>
+	</div>
+	
+	<div class="testo">
+	    <p>
+		</p>
+	</div>
+</div>
+
+    <hr>
+				
+			
+			<!--PER I TITOLI, h1-h6 da + a - importante
+			<h1>Home Page</h1>
+			-->
+			<!--PER AGGIUNGERE PARAGRAFO:
+			<p>testo paragrafo</p>
+			-->
+			<!--PER AGGIUNGERE LINK:
+			<a href="https://giorgiamingottoitcaadsaggio2024-2025.blogspot.com/">Blog</a>
+			-->
+			<!--PER AGGIUNGERE IMMAGINE:
+			<img src="xxx.jpg" alt="">
+			-->
+			<!--PER AGGIUNGERE LISTA, punti: 
+			<ul>
+			<li>primo punto della lista</li>
+			<li>secondo punto della lista</li>
+			<li>terzo punto della lista</li>
+			-->
+			<!--LISTA CON COLLEGAMENTI-->
+		<main>	
+		<footer>
+		<p> copyright <p>
+		<footer>
+		
+	</body>
+</html>
